@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../../src/logo.svg';
 
-function App() {
+import '../../../src/App.css';
+
+function Index() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/index.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -22,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default Index;

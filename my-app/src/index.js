@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './sass/main.scss' 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Index from './sass/pages';
-import Erreur404 from './sass/pages';
-import Apropos from './sass/pages';
-import FicheLogement from './sass/pages';
-import Header from './sass/components/Header/header.jsx';
+import Error from '../src/pages/404';
+import Apropos from '../src/pages/apropos';
+import FicheLogement from '../src/pages/fichelogement';
+import Home from '../src/pages/home';
+import Header from '../src/components/Header/header';
+import Footer from '../src/components/Footer/footer';
 import reportWebVitals from './reportWebVitals';
+import {useParams,useSearchParams} from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,12 +18,12 @@ root.render(
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={ <Index />} />
-        <Route path="/404" element={ <Erreur404 />} />
+        <Route path="/" element={ <Home />} />
+        <Route path="*" element={ <Error />} />
         <Route path="/apropos" element={ <Apropos />} />
-        <Route path="/fichelogement" element={ <FicheLogement />} />
+        <Route path="/logement/:id" element={ <FicheLogement />} />
       </Routes>
-      <Index />
+      <Footer />
     </Router>
     
   </React.StrictMode>

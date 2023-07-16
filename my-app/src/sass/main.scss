@@ -1,0 +1,23 @@
+@use "base/base";
+@use "base/typographie";
+
+nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+nav a, a  {
+    
+    color: #FF6060;
+    text-decoration: none;
+    text-decoration-style: none;
+    
+    margin-left: 50px;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

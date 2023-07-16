@@ -1,0 +1,269 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/keyframes" as *;
+
+body{
+    @include margBody;
+    @include flexboxRow;
+    flex-direction: column;
+    align-items: normal;
+    max-width: 1440px;
+    
+    height: auto;
+}
+
+
+
+.flex-error {
+    @include flexboxColumn
+}
+footer {
+  position: absolute;
+  
+  width: 100%;
+  left: 0;
+  right: 0;
+  
+}
+
+header {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.banner {
+    @include bannerFormat;
+    position : relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+   
+}
+.img-banner{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+    filter: brightness(50%);
+
+}
+
+.flexColumn {
+    @include flexColumn
+}
+.format-card {
+    @include cardFormat
+}
+
+.img-card {
+    @include imgCard
+}
+
+.flex-logements {
+    @include flexLogement
+}
+
+.conteneur-card {
+    @include conteneurCard
+}
+
+.objfill {
+    @include objfill;
+}
+.bloc-red {
+    @include descriptionred;
+    
+    position: relative;
+}
+
+.bloc-red-fiche {
+    @include descriptionredfichelogement;
+    
+    position: relative;
+}
+
+.flex-fiche-descri {
+    @include flexSpaceBeet;
+}
+
+.flex-descri-droite {
+    @include flexSpaceBeet;
+    align-items: center;
+    justify-content: end
+   
+}
+
+.flex-descri-globale {
+    @include flexSpaceBeet;
+    align-items: center;
+   
+}
+
+
+
+.flex-description {
+    @include flexboxColumn;
+    overflow: hidden;
+}
+
+.flex-row {
+    @include felxRowSpaceBeet
+}
+
+.bloc-grey {
+    @include descriptiongrey
+}
+.bloc-grey-fiche {
+    @include descriptiongreyfichelogement
+}
+
+
+.animation-descritpion {
+    @include animationdescription
+}
+
+.wibloc {
+    width: 100%;
+}
+/*
+.arrow-descritpion {
+    position: relative;
+    z-index: -10;
+    margin-top: auto;
+    transition: 1s;
+    height: 0px;
+    opacity: 0;
+    transform: translateY(-100%) ; 
+
+    &--anim {
+
+        transform: translateY(0);
+    }
+ 
+ }
+*/   
+
+
+
+.arrow-descritpion.active {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+    top: -20px;
+    animation: slide-in 1,5s ease-in-out;
+    transform: translateY(0);
+    transition: 1s;
+
+    
+}
+
+.arrow-descritpion.inactive {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    top: -20px;
+    animation: slide-in 1,5s ease-in-out;
+    transform: translateY(-100%);
+    transition: 1s;
+   
+}
+
+
+
+.arrow-b.inactive {
+
+    cursor: pointer;
+    transition: 1s;
+    rotate: 0;
+
+
+}
+.arrow-b.active {
+    cursor: pointer;
+    transform:rotate(180deg);
+    transition: 1s;
+}
+/*
+.animation-description {
+
+    &:active + .arrow-descritpion{
+        
+        opacity: 100%;
+        transform:  translateY(0);
+        height: 100%;
+        z-index: -20;
+
+    }
+
+}
+*/
+.format-carrousel {
+    @include carrousel
+}
+
+.rond-gris {
+    @include rondgrisformat
+}
+
+.tag-format {
+    @include tagformat;
+    
+}
+
+.marg-r {
+    margin-right: 10px;
+}
+
+.marg-l {
+    margin-left: 10px;
+}
+
+
+.arrow-carrou {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.marg-descri {
+
+    margin-bottom: -20px;
+
+}
+
+.stars  {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+@media all  and (max-width:600px) {
+
+    .flex-row-media {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+
+    .flex-descri-globale {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .flex-fiche-descri {
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,90 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+h1 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    
+    position: absolute;
+    
+    
+    color: white;
+}
+
+h2 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    
+    color: #FF6060;
+}
+
+h3 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    width: 320px;
+    bottom:68px;
+    color: white;
+    padding-left : 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h4 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    position: relative;
+   
+    color: white;
+    padding-left : 10px;
+    display: flex;
+   
+}
+h5 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    
+    color: #FF6060;
+}
+
+h6 {
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    
+    color:white;
+}
+p {
+    padding: 10px;
+   
+}
+a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    &nav--a {
+        font-size: 24px;
+    }
+}
+
+li {
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    
+    color: #FF6060;
+
+list-style-type: none;
+}

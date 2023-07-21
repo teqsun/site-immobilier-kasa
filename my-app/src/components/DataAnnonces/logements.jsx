@@ -1,16 +1,15 @@
 import {logementsList} from '../../datas/logementlist'
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react';
-
+import React, { useState,useParams,useEffect } from 'react';
+import Error from '../../pages/404';
 
 function CardLogements(props) {
 	
 	const logement = props.logement
-	console.log("props de la card")
-	console.log(props)
 
 	const link = "/logement/"+logement.id
-    //console.log(props)
+
+  
     return (
 		
 			<div>

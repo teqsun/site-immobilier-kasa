@@ -40,7 +40,7 @@ h4 {
 
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 18px;
     position: relative;
    
     color: white;
@@ -61,7 +61,7 @@ h6 {
 
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     
     color:white;
 }
@@ -69,6 +69,20 @@ p {
     padding: 10px;
    
 }
+
+
+    
+nav a,a {
+    margin-left: 20px;
+}
+span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    
+    color:white;
+}
+
 a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -83,8 +97,42 @@ li {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    
+    padding-right: 30px;
     color: #FF6060;
 
 list-style-type: none;
+}
+
+@media all  and (max-width:820px) {
+
+
+    h1 {
+        font-size: 24px;
+    }
+    h2{
+    font-size: 18px;
+    }
+}
+
+@media all  and (max-width:420px) {
+    a{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .marg-descri{
+        margin-bottom: -16px;
+    }
+    .rond-gris {
+        width: 46px;
+        height: 46px;
+    }
+    .bloc-red-fiche{
+        height: 30px;
+        border-radius: 10px;
+    }
 }

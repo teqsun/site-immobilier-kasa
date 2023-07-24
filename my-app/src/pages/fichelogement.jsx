@@ -2,7 +2,7 @@ import Slider from "../components/Slider/slideshow"
 import React, { useEffect, useState } from "react"
 
 import { logementsList } from "../datas/logementlist"
-import { useParams, useSearchParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import Tag from "../components/MotCles/tag"
 import Collapse from "../components/Dropdown/collapse"
 import star from "../assets/images/star.png"
@@ -16,7 +16,7 @@ function FicheLogement() {
             })
       )
 
-      // on check si l'id de la page actuelle correspond
+      // on check l'id de la page actuelle 
       useEffect(() => {
             const foundLogement = logementsList.find((c) => c.id === param.id);
         

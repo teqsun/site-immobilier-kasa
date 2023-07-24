@@ -2,11 +2,10 @@ import React from "react";
 
 
 function Tag(props) {
-	console.log("props du tag")
-	console.log(props)
+	
 	const tags = props.tags
 
-	console.log(tags)
+	
     return (
         <div>
 			

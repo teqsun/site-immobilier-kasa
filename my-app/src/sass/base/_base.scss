@@ -2,26 +2,29 @@
 @use "../utils/mixins" as *;
 @use "../utils/keyframes" as *;
 
-body{
-   
+body {
+
     display: flex;
-   justify-content: center;
-  
-   
+    justify-content: center;
+
+
 }
+
 main {
     @include margBody;
     @include flexboxRow;
     flex-direction: column;
     align-items: normal;
     max-width: 1440px;
-    
-   
+
+
 }
-.back-home{
+
+.back-home {
     text-decoration: underline;
 }
-#root{
+
+#root {
     width: 90%;
     max-width: 1440px;
     padding: 0 50px;
@@ -32,13 +35,14 @@ main {
 .flex-error {
     @include flexboxColumn
 }
+
 footer {
-  
-  
-  width: 100%;
-  
-  overflow: hidden;
-  
+
+
+    width: 100%;
+
+    overflow: hidden;
+
 }
 
 header {
@@ -47,21 +51,22 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    
+
 }
 
 .banner {
     @include bannerFormat;
-    position : relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
 
-   
+
 }
-.img-banner{
-    
+
+.img-banner {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -73,6 +78,7 @@ header {
 .flexColumn {
     @include flexColumn
 }
+
 .format-card {
     @include cardFormat
 }
@@ -92,15 +98,16 @@ header {
 .objfill {
     @include objfill;
 }
+
 .bloc-red {
     @include descriptionred;
-    
+
     position: relative;
 }
 
 .bloc-red-fiche {
     @include descriptionredfichelogement;
-    
+
     position: relative;
 }
 
@@ -115,13 +122,12 @@ header {
     @include flexSpaceBeet;
     align-items: center;
     justify-content: end
-   
 }
 
 .flex-descri-globale {
     @include flexSpaceBeet;
     align-items: center;
-   
+
 }
 
 
@@ -138,6 +144,7 @@ header {
 .bloc-grey {
     @include descriptiongrey
 }
+
 .bloc-grey-fiche {
     @include descriptiongreyfichelogement
 }
@@ -159,12 +166,12 @@ header {
     justify-content: center;
 }
 
-/* affiche le contenu */
+
 .visible {
     display: block;
 }
 
-/* cache le contenu */
+
 .hidden {
     display: none;
 }
@@ -174,46 +181,46 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;}
-    .arrow-trigger{
+    width: 100%;
+}
 
-        cursor: pointer;
-        transform:rotate(180deg);
-        transition: 1s;
-    }
+.arrow-trigger {
 
-    .description-panel{
-        background-color: #F6F6F6 ;
-        height: auto;
-        border-radius: 15px;
-        position: relative;
-    
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+.description-panel {
+    background-color: #F6F6F6;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+
     visibility: visible;
     top: -20px;
     animation: slide-in 1, 5s ease-in-out;
     transform: translateY(-100%);
     transition: 1s;
-        
-
-    }
 
 
+}
 
 
-.description-panel{
+.description-panel {
     position: relative;
-        opacity: 1;
-        visibility: visible;
-        top: -20px;
-        animation: slide-in 1, 5s ease-in-out;
-        transform: translateY(0);
-        transition: 1s;
-    }
+    opacity: 1;
+    visibility: visible;
+    top: -20px;
+    animation: slide-in 1, 5s ease-in-out;
+    transform: translateY(0);
+    transition: 1s;
+}
 
 
 
 
-.arrow-trigger{
+.arrow-trigger {
 
     cursor: pointer;
     transition: 1s;
@@ -230,44 +237,43 @@ header {
 
 .grey-fiche {
     height: max-content;
-  background-color: #f6f6f6;
-  font-size: 1.3em;
-  padding: 0px 20px;
-  padding-bottom: 5px;
-  position: relative;
-  
-  
-  margin-top: 0px;
-  border-radius: 15px;
- 
+    background-color: #f6f6f6;
+    font-size: 1.3em;
+    padding: 0px 20px;
+    padding-bottom: 5px;
+    position: relative;
+    margin-top: 0px;
+    border-radius: 15px;
+
 }
+
 .arrow-descritpion.active {
     position: relative;
     opacity: 1;
     visibility: visible;
-    
-    animation: slide-in 1,5s ease-in-out;
+
+    animation: slide-in 1, 5s ease-in-out;
     transform: translateY(0);
-    transition: 1s;   
-   
+    transition: 1s;
+
 }
 
 .arrow-descritpion.inactive {
     position: relative;
     opacity: 0;
     visibility: hidden;
-   
-    animation: slide-in 1,5s ease-in-out;
+
+    animation: slide-in 1, 5s ease-in-out;
     transform: translateY(-100%);
     transition: 1s;
     margin-bottom: -40px;
-   
+
 }
 
-.bloc-about{
-display: flex;
-flex-direction: column;
-align-items: center;
+.bloc-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .wibloc {
         width: 80%;
@@ -283,9 +289,10 @@ align-items: center;
 
 
 }
+
 .arrow-b.active {
     cursor: pointer;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
     transition: 1s;
 }
 
@@ -299,7 +306,7 @@ align-items: center;
 
 .tag-format {
     @include tagformat;
-    
+
 }
 
 .marg-r {
@@ -324,33 +331,33 @@ align-items: center;
 
 }
 
-.stars  {
+.stars {
     display: flex;
     flex-direction: row;
 
-
 }
 
-.little-logo{
+.little-logo {
 
     display: none;
 }
 
-.logo-mob{
+.logo-mob {
     display: none;
 }
 
-.error-mob{
+.error-mob {
     display: none;
 }
-@media all  and (max-width:768px) {
+
+@media all and (max-width:768px) {
 
     .flex-row-media {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-    align-items: center;
-    width: 100%;
+        align-items: center;
+        width: 100%;
     }
 
     .flex-descri-globale {
@@ -363,7 +370,7 @@ align-items: center;
         flex-direction: column;
     }
 
-    .descri-fiche{
+    .descri-fiche {
         flex-direction: column;
     }
 
@@ -371,74 +378,85 @@ align-items: center;
         width: 100%;
     }
 
-    .wibloc{
+    .wibloc {
         width: 100%;
     }
 
-    .arrow-descritpion.inactive{
+    .arrow-descritpion.inactive {
         margin-bottom: -60px;
     }
-    .little-logo{
+
+    .little-logo {
 
         display: block;
     }
-    .normal-logo{
+
+    .normal-logo {
         display: none;
     }
-    
+
     .conteneur-card {
-    background-color: transparent;
+        background-color: transparent;
     }
 
-    #root{
+    #root {
         width: 95%;
         padding: 0;
     }
-    
-    .flex-logements{
+
+    .flex-logements {
         gap: 0;
     }
+
     .format-card {
-       
+
         height: 255px;
     }
-    .banner{
+
+    .banner {
         margin-bottom: 0;
     }
-    .format-carrousel{
+
+    .format-carrousel {
         height: 255px;
     }
-    .current-slide{
+
+    .current-slide {
         display: none;
     }
-    .error-desk{
+
+    .error-desk {
         display: none;
     }
-    .error-mob{
+
+    .error-mob {
         display: block;
     }
-    .bloc-about{
+
+    .bloc-about {
         margin-top: 20px;
     }
 }
 
 
-@media all  and (max-width:1440px) {
-    
+@media all and (max-width:1440px) {
+
     .flex-logements {
 
-    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
     }
 }
-@media all  and (max-width:440px) {
-.logo-mob{
-    display: flex;
-}
-.logo-desk{
-    display: none;
-}
+
+@media all and (max-width:440px) {
+    .logo-mob {
+        display: flex;
+    }
+
+    .logo-desk {
+        display: none;
+    }
 }

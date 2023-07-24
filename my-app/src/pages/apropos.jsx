@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Collapse from "../components/Dropdown/collapse"
 import fond from "../assets/images/fond2.png"
 

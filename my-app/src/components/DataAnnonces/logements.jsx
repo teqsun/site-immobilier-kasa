@@ -1,7 +1,7 @@
-import {logementsList} from '../../datas/logementlist'
+
 import { Link } from 'react-router-dom'
-import React, { useState,useParams,useEffect } from 'react';
-import Error from '../../pages/404';
+import React from 'react';
+
 
 function CardLogements(props) {
 	

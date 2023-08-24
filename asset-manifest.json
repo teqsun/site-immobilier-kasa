@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/teqsun.github.io/site-immobilier-kasa/static/css/main.7d471ae5.css",
-    "main.js": "/teqsun.github.io/site-immobilier-kasa/static/js/main.84b9731c.js",
-    "static/js/787.28cb0dcd.chunk.js": "/teqsun.github.io/site-immobilier-kasa/static/js/787.28cb0dcd.chunk.js",
-    "static/media/fond2.png": "/teqsun.github.io/site-immobilier-kasa/static/media/fond2.640955dab8c7bff25514.png",
-    "static/media/fond1.png": "/teqsun.github.io/site-immobilier-kasa/static/media/fond1.19221376a0aa2549c135.png",
-    "index.html": "/teqsun.github.io/site-immobilier-kasa/index.html",
-    "main.7d471ae5.css.map": "/teqsun.github.io/site-immobilier-kasa/static/css/main.7d471ae5.css.map",
-    "main.84b9731c.js.map": "/teqsun.github.io/site-immobilier-kasa/static/js/main.84b9731c.js.map",
-    "787.28cb0dcd.chunk.js.map": "/teqsun.github.io/site-immobilier-kasa/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/site-immobilier-kasa/static/css/main.7d471ae5.css",
+    "main.js": "/site-immobilier-kasa/static/js/main.ba59367b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/site-immobilier-kasa/static/js/787.28cb0dcd.chunk.js",
+    "static/media/fond2.png": "/site-immobilier-kasa/static/media/fond2.640955dab8c7bff25514.png",
+    "static/media/fond1.png": "/site-immobilier-kasa/static/media/fond1.19221376a0aa2549c135.png",
+    "index.html": "/site-immobilier-kasa/index.html",
+    "main.7d471ae5.css.map": "/site-immobilier-kasa/static/css/main.7d471ae5.css.map",
+    "main.ba59367b.js.map": "/site-immobilier-kasa/static/js/main.ba59367b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/site-immobilier-kasa/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d471ae5.css",
-    "static/js/main.84b9731c.js"
+    "static/js/main.ba59367b.js"
   ]
 }
